@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*custom*/
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+:root {
+	--main-color: #ED563A;
+	--text-color: #8A8A8A;
+	--text-color-light: #E7E8E9;
+	--text-blue: #3A8FFA;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 32px;
+	text-align: center;
+}
+.flex{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.flex-start{
+	justify-content: flex-start;
+}
+.space{
+	justify-content: space-between;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.flex-30{
+	flex: 0 1 30%;
+}
+.flex-48{
+	flex: 0 1 48%;
+}
+.flex-20{
+	flex: 0 1 20%;
+}
+.flex-50{
+	flex: 0 1 50%;
+}
+.flex-80{
+	flex: 0 1 80%;
+}
+.flex-60{
+	flex: 0 1 60%;
+}
+.padding{
+	padding: 0 230px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.btn{
+	text-transform: uppercase;
+	display: inline-block;
+}
+.btn-primary{
+	background-color: #ED563A;
+	color: white;
+	padding: 12px;
+	font-size: 9px;
+}
+.btn-secondary{
+	color: #ED563A;
+}
+.btn-secondary:hover{
+	text-decoration: underline;
+}
+strong{
+	color: var(--main-color);
+}
+p{
+	line-height: 1.7;
+	color: var(--text-color);
+	font-size: 10px;
+}
+.active{
+	color: var(--main-color);
+}
+h5{
+	font-size: 12px;
+}
+h1{
+	color: white;
+}
+h3{
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+h4{
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.tabs-img{
+	margin: 15px 0;
+	width: 30px;
+}
+
+/*hero header*/
+.brand{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.hero-navbar{
+	padding: 12px 120px;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+}
+.hero-navbar nav a{
+	text-transform: uppercase;
+	font-size: 9px;
+	margin-right: 32px;
+}
+.hero-navbar nav a:hover{
+	color: var(--main-color);
+}
+.btn-primary:hover{
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), var(--main-color);
+	color: white !important;
+}
+.hero-heading{
+	text-align: center;
+	padding: 240px 0;
+	position: relative;
+	top: 20px;
+	left: 0;
+	z-index: 1;
+}
+.hero h5{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.hero h1{
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-size: 60px;
+}
+#myVideo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	min-width: 100%;
+	max-height: 110%;
+  }
+  .hero::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	content: '';
+	  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  }
+
+
+
+/*programs*/
+.choose-program{
+	margin-top: 150px;
+	margin-bottom: 70px;
+}
+.programs {
+	margin-top: 50px;
+}
+.programs-img img{
+	width: 100%;
+}
+.programs-content{
+	text-align: left;
+	margin-left: 20px;
+} 
+.programs-content p{
+	padding-right: 20px;
+}
+.programs-content .btn-secondary{
+	font-size: 9px;
+	margin-top: 10px;
+}
+.programs-content strong{
+	color: var(--text-blue);
+}
+.program-articles{
+	margin-bottom: 20px;
+}
+
+
+/*begin*/
+.begin{
+	padding: 80px 0;
+	text-align: center;
+	background-size: cover;
+	background-image: url(assets/cta-bg.jpg);
+}
+.begin h2{
+	margin-top: 10px;
+	font-size: 26px;
+	font-weight: 900;
+	color: white;
+	text-transform: uppercase;
+}
+.begin p{
+	margin: 15px 0;
+	padding: 0 370px;
+	color: var(--text-color-light);
+}
+
+/*our classes*/
+
+.classes{
+	margin: 70px 0;
+	text-align: center;
+}
+.training-sidebar{
+	padding: 18px 12px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 5px 5px #f5f5f5;
+}
+.training-sidebar img{
+	width: 25px;
+	margin-right: -10px;
+}
+.sidebar .btn-primary{
+	width: 100%;
+	padding: 15px 0;
+	border-radius: 5px;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}
+.classes .btn:hover, .form .btn:hover{
+	background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), var(--main-color);
+}
+.classes-content{
+	margin-top: 50px;
+}
+.training-article{
+	text-align: left;
+	margin-left: 20px;
+}
+.training-article img{
+	width: 100%;
+	margin-top: -40px;
+	border-radius: 5px;
+}
+.training-article h4{
+	font-size: 16px;
+	margin: 15px 0;
+	font-weight: 700;
+}
+.training-article p{
+	margin-bottom: 20px;	
+}
+.training-article .btn-primary{
+	font-size: 10px;
+}
+
+
+/*schedule*/
+.schedule{
+	padding: 100px 0;
+	text-align: center;
+	background-size: cover;
+	background-image: url(assets/schedule-bg.jpg);
+	color: white;
+}
+.schedule p{
+	color: white;
+}
+.schedule .caption td:nth-child( odd ):hover{
+	color: var(--main-color);
+}
+.caption{
+	text-transform: capitalize;
+	margin: 50px auto 20px auto;
+}
+.caption td{
+	padding: 0 5px;
+	font-size: 12px;
+}
+.table{
+	margin: 0 auto;
+}
+.table td{
+	border: 0.5px solid white;
+	border-collapse: collapse;
+	padding: 18px 30px;
+	font-size: 9px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.table td:first-child, .table td:last-child{
+	padding: 18px 45px;
+	text-transform: capitalize;
+}
+
+/*expert-trainers*/
+.expert-trainers{
+	margin: 80px 0;
+	text-align: center;
+}
+.trainers{
+	text-align: left;
+	padding: 30px;
+	margin-top: 50px;
+	box-shadow: 0 0 5px 5px #F5F5F5;
+}
+.trainers img{
+	width: 100%;
+	height: 130px;
+	border-radius: 5px;
+}
+.trainers h6{
+	font-size: 10px;
+	text-transform: capitalize;
+	color: var(--main-color);
+	margin: 20px 0 10px 0;
+}
+.trainers p{
+	margin: 10px 0;
+}
+.trainers a{
+	margin-right: 12px;
+	color: rgb(32, 32, 32);
+	font-size: 12px;
+	margin-top: 10px;
+}
+.trainers a:hover{
+	color: var(--main-color);
+}
+
+/*form*/
+.map iframe{
+	width: 100%;
+	font-size: 0;
+	height: 420px;
+}
+.form-control{
+	width: 100%;
+	border: 1px solid #E4E4E4;
+	padding: 5px 8px;
+	margin-bottom: 20px;
+}
+::placeholder{
+	text-transform: capitalize;
+	font-size: 10px;
+}
+.form-bg{
+	background: url(assets/contact-bg.jpg);
+	background-size: cover;
+	padding: 55px 30px;
+}
+.form{
+	background-color: white;
+	padding: 30px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.form .btn-primary{
+	border: 0;
+	padding: 12px 24px;
+}
+footer{
+	text-align: center;
+	font-size: 10px;
+	padding: 30px;
+}
